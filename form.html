@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="scripts/form.js" defer></script>
+        <script src="scripts/json.js" defer></script>
+        <title>Studio Ghibli - Formular</title>   
+    </head>
+    <body>
+        <h1>Studio Ghibli</h1>
+        <form id="form" method="POST">
+            <fieldset name="fav_movie">
+                <legend>Was ist euer Lieblingsfilm von Studio Ghibli?</legend>
+
+                <input type="checkbox" checked="checked" id="Mein_Nachbar_Totoro" name="fav_movie" value="Mein Nachbar Totoro">
+                <label for="Mein_Nachbar_Totoro">Mein Nachbar Totoro</label><br>
+
+                <input type="checkbox" id="Kikis_kleiner_Lieferservice" name="fav_movie" value="Kiki's kleiner Lieferservice">
+                <label for="Kikis_kleiner_Lieferservice">Kiki's kleiner Lieferservice</label><br>
+
+                <input type="checkbox" id="Chihiros_Reise_ins_Zauberland" name="fav_movie" value="Chihiros Reise ins Zauberland">
+                <label for="Chihiros_Reise_ins_Zauberland">Chihiros Reise ins Zauberland</label><br>
+
+                <input type="checkbox" id="Das_wandelnde_Schloss" name="fav_movie" value="Das wandelnde Schloss">
+                <label for="Das_wandelnde_Schloss">Das wandelnde Schloss</label>
+            </fieldset>
+
+            <fieldset name="rate_movie">
+                <legend>Bewertet die Filme von 1-10</legend>
+
+                <label for="Mein_Nachbar_Totoro">Mein Nachbar Totoro:</label>
+                <input type="range" id="Mein_Nachbar_Totoro_" name="Mein_Nachbar_Totoro" min="0" max="10" value="0" onchange="rangevalue1.value=value" step="1">
+                <output id="rangevalue1">0</output><br>
+
+                <label for="Kikis_kleiner_Lieferservice">Kiki's kleiner Lieferservice:</label>
+                <input type="range" id="Kikis_kleiner_Lieferservice_" name="Kikis_kleiner_Lieferservice" min="0" max="10" value="0" onchange="rangevalue2.value=value" step="1">
+                <output id="rangevalue2">0</output><br>
+
+                <label for="Chihiros_Reise_ins_Zauberland">Chihiros Reise ins Zauberland:</label>
+                <input type="range" id="Chihiros_Reise_ins_Zauberland_" name="Chihiros_Reise_ins_Zauberland" min="0" max="10" value="0" onchange="rangevalue3.value=value" step="1">
+                <output id="rangevalue3">0</output><br>
+
+                <label for="Das_wandelnde_Schloss">Das wandelnde Schloss:</label>
+                <input type="range" id="Das_wandelnde_Schloss_" name="Das_wandelnde_Schloss" min="0" max="10" value="0" onchange="rangevalue4.value=value" step="1">
+                <output id="rangevalue4">0</output><br>
+            </fieldset>
+
+            <fieldset name="fav_food">
+                <legend>In all diesen Filmen gibt es eine Fülle von erstaunlichen animierten Gerichten.
+                    Gibt es ein Gericht, dass Ihr gerne einmal essen würdet?</legend>
+                <select id="food">
+                    <option value="Onigiri von Chihiros Reise ins Zauberland">Onigiri von Chihiros Reise ins Zauberland</option>
+                    <option value="Satsuki's Bento von Mein Nachbar Totoro">Satsuki's Bento von Mein Nachbar Totoro</option>
+                    <option value="Die Pastete aus dem Film Kiki's kleiner Lieferservice">Die Pastete aus dem Film Kiki's kleiner Lieferservice</option>
+                    <option value="Speck und Eier aus Das bewegte Schloss">Speck und Eier aus Das bewegte Schloss</option>
+                    <option value="Kiki's Schokoladenkuchen von Kiki's kleiner Lieferservice">Kiki's Schokoladenkuchen von Kiki's kleiner Lieferservice</option>
+                    <option value="Rote Bohnen-Brötchen aus Chihiros Reise ins Zauberland">Rote Bohnen-Brötchen aus Chihiros Reise ins Zauberland</option>
+                </select>
+            </fieldset>
+
+            <fieldset name="growing_up_with_anime">
+                <legend>Bist du mit Anime aufgewachsen?</legend>
+
+                <input type="radio" id="ja" name="growing_up_with_anime" value="ja"> 
+                <label for="ja">Ja</label>
+
+                <input type="radio" id="nein" name="growing_up_with_anime" value="nein">
+                <label for="nein">Nein</label>
+            </fieldset>
+
+            <fieldset name="message">
+                <legend>Ihre Meinung <span>Pflichtangabe</span></legend>
+                <label for="message">Teilt eure Gedanken:</label>
+                <textarea id="message" minlength="5" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Wollt ihr unseren Newsletter abonnieren? <span>Pflichtangabe</span></legend>
+                <label for="mail">E-Mail</label>
+                <input id="mail" type="email" name="mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>
+  

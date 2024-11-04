@@ -1,0 +1,192 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Trebuchet MS;
+    --background-color: #D7D0C8;
+    --text-color: #BD897E;
+    --highlight-color: #95A78D;
+    --border-color: #A99886;
+    --base-font-size: 20px;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 10%;
+}
+
+p {
+    font-size: var(--base-font-size);
+    text-align: justify;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h3::before{ 
+    content: '  ✧･ﾟ:*✧･ﾟ:*  ';
+    color: var(--text-color);
+}
+
+h3::after{
+    content: '  ✧･ﾟ:*✧･ﾟ:*  ';
+    color: var(--text-color);
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--highlight-color);
+    display: block;
+    padding: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+nav > ul {
+    display: grid;
+    grid-template-columns: repeat(3 , minmax(14px, 2fr));
+    gap: 4px 6px;
+    list-style: none;
+}
+
+nav > ul > li {
+    font-size: 18px;
+    text-align: center;
+}
+
+.umfrage {
+    grid-column: 2 / 3;
+}
+
+a{
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--text-color);
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, auto-fit);
+    justify-content: center;
+    align-items: center;
+}
+
+#einfuehrung {
+    text-align: center;
+}
+
+#Filmografie {
+    width: 80%;
+    font-size: var(--base-font-size);
+    margin: auto;
+    text-align: center;
+    display: table;
+}
+
+table, tr, td {
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.pic {
+    border: 5px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+figcaption {
+    position: absolute;
+    width: 20%;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    align-items: center;
+}
+
+.picture {
+    margin-bottom: 60px;
+    width: 60%;
+}
+
+#Umfrage {
+    background-color: var(--highlight-color);
+    text-align: center;
+    margin: 60px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    p{
+        font-size: 16px;
+    }
+}
+    
+@media (min-width: 700px){
+    p{
+        font-size: 20px;
+    }
+}
+
+.required {
+    border: 2px solid rgb(230, 69, 69);
+}
+
+.mark {
+    background: var(--text-color);
+    color: var(--background-color);
+	font-size: larger;
+	padding: 4% 3%;
+}
+
+span {
+    color: rgb(230, 69, 69);
+}
+
+.error {
+    color: rgb(230, 69, 69);
+}
+
+.success {
+    display: block;
+    color: var(--highlight-color);
+    font-size: larger;
+}
