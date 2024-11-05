@@ -23,10 +23,11 @@ This project is a web-based survey form dedicated to Studio Ghibli films. Users 
 
 #### Main Survey Form
 ![App Screenshot](image/app-screenshot1.png)
+You see the words "Pflichtangabe" because if you want to submit your survey, you must complete both.
 
 ### Dynamic Image Change
 ![App Screenshot](image/app-screenshot2.png)
-
+I have marked the words "Das Bild wurde geändert" under the image, because this gives the user a notification that the image has changed after clicking on it. The direct translation is "The image has changed".
 
 ## Technologies Used
 
