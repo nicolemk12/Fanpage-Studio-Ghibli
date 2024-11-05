@@ -1,4 +1,4 @@
-# Studio Ghibli Survey Form
+# 📺 Studio Ghibli Survey Form
 
 This project is a web-based survey form dedicated to Studio Ghibli films. Users can express their favorite movies, rate them, and share their thoughts on various aspects of Ghibli's animated works.
 
@@ -18,6 +18,7 @@ This project is a web-based survey form dedicated to Studio Ghibli films. Users 
 - **User Background**: Users can indicate if they grew up watching anime through radio buttons.
 - **Feedback Section**: A textarea for users to share their thoughts and experiences related to Ghibli films.
 - **Email Subscription**: Users can subscribe to a newsletter by providing their email.
+- **Dynamic Image Changes**: Users can click on images to toggle between different visuals representing the films.
 - **Validation**: The form includes client-side validation to ensure required fields are filled out.
 
 ## Technologies Used
@@ -26,7 +27,6 @@ This project is a web-based survey form dedicated to Studio Ghibli films. Users 
 - CSS
 - JavaScript
 - JSON
-
 
 ## How to Use
 
