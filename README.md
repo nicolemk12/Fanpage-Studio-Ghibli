@@ -21,7 +21,7 @@ This project is a web-based survey form dedicated to Studio Ghibli films. Users 
 - **Dynamic Image Changes**: Users can click on images to toggle between different visuals representing the films.
 - **Validation**: The form includes client-side validation to ensure required fields are filled out.
 
-[App Screenshot](images/app-screenshot1.png)
+[App Screenshot](image/app-screenshot1.png)
 
 
 
